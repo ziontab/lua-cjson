@@ -8,10 +8,9 @@
 VERSION_FILES="lua-cjson-2.1devel-1.rockspec lua-cjson.spec lua_cjson.c manual.txt runtests.sh tests/test.lua"
 
 [ "$1" ] && BRANCH="$1" || BRANCH="`git describe --match '[1-3].[0-9]*'`"
-VERSION="`git describe --match '[1-3].[0-9]*' $BRANCH`"
-VERSION="${VERSION//-/.}"
+VERSION="1.0"
 
-PREFIX="lua-cjson-$VERSION"
+PREFIX="lua-cjson-games-$VERSION"
 
 set -x
 set -e
